@@ -1,0 +1,2469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5INCO INSTRUMENTARIA - Streetwear Premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ESTILOS PRINCIPALES - Estilo Premium */
+        :root {
+            --negro: #111111;
+            --blanco: #FFFFFF;
+            --gris-oscuro: #222222;
+            --gris-medio: #444444;
+            --gris-claro: #F9F9F9;
+            --rojo: #E63946;
+            --beige: #F5EFE6;
+            --dorado: #D4AF37;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        body {
+            background-color: var(--gris-claro);
+            color: var(--negro);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* TIPOGRAFÍA ELEGANTE */
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 600;
+        }
+        
+        /* HEADER PREMIUM */
+        .header {
+            background-color: rgba(17, 17, 17, 0.95);
+            color: var(--blanco);
+            padding: 1.2rem 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--blanco);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        
+        .logo span {
+            color: var(--rojo);
+            font-weight: 800;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--rojo);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-links a:hover {
+            color: var(--rojo);
+        }
+        
+        .nav-icons {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        
+        .icon-btn {
+            background: none;
+            border: none;
+            color: var(--blanco);
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        .icon-btn:hover {
+            color: var(--rojo);
+        }
+        
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: var(--rojo);
+            color: white;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .user-btn {
+            background: var(--rojo);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .user-btn:hover {
+            background: #c1121f;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+        }
+        
+        /* HERO SECTION PREMIUM */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--blanco);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 80px;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+        }
+        
+        .hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .trust-banner {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 3rem auto;
+            max-width: 800px;
+        }
+        
+        .trust-banner h3 {
+            color: var(--dorado);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .trust-banner p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        /* SECCIÓN COLECCIONES */
+        .collections-section {
+            max-width: 1400px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--negro);
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--gris-medio);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .season-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0 3rem;
+        }
+        
+        .season-btn {
+            padding: 0.8rem 2rem;
+            border: 2px solid var(--gris-medio);
+            background: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .season-btn.active {
+            background: var(--negro);
+            color: white;
+            border-color: var(--negro);
+        }
+        
+        /* FILTROS DE GÉNERO */
+        .gender-filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .gender-btn {
+            padding: 0.8rem 2rem;
+            border: 2px solid var(--gris-medio);
+            background: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            min-width: 140px;
+        }
+        
+        .gender-btn.active {
+            background: var(--rojo);
+            color: white;
+            border-color: var(--rojo);
+        }
+        
+        .gender-btn.masculino.active {
+            background: #1E3A8A;
+            border-color: #1E3A8A;
+        }
+        
+        .gender-btn.femenino.active {
+            background: #BE185D;
+            border-color: #BE185D;
+        }
+        
+        .gender-btn.unisex.active {
+            background: #047857;
+            border-color: #047857;
+        }
+        
+        /* PRODUCTOS */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+        }
+        
+        .product-card {
+            background: var(--blanco);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--rojo);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+        }
+        
+        .product-img-container {
+            height: 380px;
+            overflow: hidden;
+        }
+        
+        .product-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        
+        .product-card:hover .product-img {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            padding: 1.8rem;
+        }
+        
+        .product-category {
+            color: var(--rojo);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-title {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: var(--negro);
+        }
+        
+        .product-description {
+            color: var(--gris-medio);
+            margin-bottom: 1.2rem;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        .product-price {
+            color: var(--negro);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+        }
+        
+        .product-colors {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.2rem;
+        }
+        
+        .color-dot {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        
+        .product-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--gris-medio);
+        }
+        
+        .add-to-cart-btn {
+            width: 100%;
+            padding: 1rem;
+            background: var(--negro);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+        }
+        
+        .add-to-cart-btn:hover {
+            background: var(--rojo);
+            transform: translateY(-2px);
+        }
+        
+        /* SECCIÓN NOSOTROS */
+        .about-section {
+            max-width: 1400px;
+            margin: 6rem auto;
+            padding: 4rem 2rem;
+            background: var(--blanco);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+        }
+        
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--blanco);
+            text-align: center;
+            padding: 8rem 2rem;
+            border-radius: 15px;
+            margin-bottom: 4rem;
+        }
+        
+        .about-hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .about-hero p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 5rem;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--negro);
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--gris-medio);
+            margin-bottom: 2rem;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin: 5rem 0;
+        }
+        
+        .value-card {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            background: var(--gris-claro);
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .value-icon {
+            font-size: 3rem;
+            color: var(--rojo);
+            margin-bottom: 1.5rem;
+        }
+        
+        .value-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--negro);
+        }
+        
+        .value-card p {
+            color: var(--gris-medio);
+            line-height: 1.7;
+        }
+        
+        .founders-banner {
+            background: linear-gradient(135deg, #111 0%, #333 100%);
+            color: white;
+            padding: 4rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 5rem 0;
+        }
+        
+        .founders-banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--dorado);
+        }
+        
+        .founders-banner p {
+            font-size: 1.3rem;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .about-cta {
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        .about-cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        /* PANEL DE ADMINISTRACIÓN */
+        .login-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .login-modal.active {
+            display: flex;
+        }
+        
+        .login-box {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+        }
+        
+        .login-box h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--negro);
+        }
+        
+        .login-form input {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        .login-form input:focus {
+            outline: none;
+            border-color: var(--rojo);
+        }
+        
+        .admin-panel {
+            display: none;
+            max-width: 1400px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+        }
+        
+        .admin-panel.active {
+            display: block;
+        }
+        
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .admin-tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        
+        .admin-tab {
+            padding: 1rem 2rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--gris-medio);
+            border-radius: 8px 8px 0 0;
+            transition: all 0.3s;
+        }
+        
+        .admin-tab.active {
+            background: var(--negro);
+            color: white;
+        }
+        
+        .admin-content {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        
+        .categories-manager {
+            display: none;
+        }
+        
+        .categories-manager.active {
+            display: block;
+        }
+        
+        .categories-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .category-card {
+            background: var(--gris-claro);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 2px solid #eee;
+            transition: all 0.3s;
+        }
+        
+        .category-card:hover {
+            border-color: var(--rojo);
+            transform: translateY(-3px);
+        }
+        
+        /* CONTACTO */
+        .contact-section {
+            max-width: 1200px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 4rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+        }
+        
+        /* CARRITO */
+        .cart-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 450px;
+            height: 100%;
+            background: var(--blanco);
+            box-shadow: -5px 0 30px rgba(0,0,0,0.15);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        
+        .cart-modal.active {
+            display: block;
+        }
+        
+        .cart-header {
+            padding: 2rem;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .cart-items {
+            padding: 2rem;
+        }
+        
+        .cart-footer {
+            padding: 2rem;
+            border-top: 1px solid #eee;
+            position: sticky;
+            bottom: 0;
+            background: white;
+        }
+        
+        /* FOOTER */
+        .footer {
+            background: var(--negro);
+            color: white;
+            padding: 4rem 2rem 2rem;
+            margin-top: 6rem;
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--dorado);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.8rem;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--rojo);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 3rem;
+            margin-top: 3rem;
+            border-top: 1px solid #333;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+                background: none;
+                border: none;
+                color: var(--blanco);
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-hero {
+                padding: 4rem 1.5rem;
+            }
+            
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .cart-modal {
+                width: 100%;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .gender-filters {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .gender-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        
+        /* UTILITIES */
+        .hidden {
+            display: none;
+        }
+        
+        .visible {
+            display: block;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .mt-3 {
+            margin-top: 3rem;
+        }
+        
+        .mb-3 {
+            margin-bottom: 3rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--negro);
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: var(--rojo);
+        }
+        
+        .btn-primary:hover {
+            background: #c1121f;
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--negro);
+            color: var(--negro);
+        }
+        
+        .btn-outline:hover {
+            background: var(--negro);
+            color: white;
+        }
+        
+        /* ANIMACIONES */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        /* BOTÓN FLOTANTE WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            z-index: 999;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            background: #128C7E;
+            transform: scale(1.1);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER PREMIUM -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">5<span>INCO</span> INSTRUMENTARIA</a>
+            
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#colecciones">Colecciones</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            
+            <div class="nav-icons">
+                <button class="icon-btn cart-btn" onclick="toggleCart()">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="user-btn" onclick="openAdminLogin()">
+                    <i class="fas fa-user-cog"></i> Admin
+                </button>
+            </div>
+            
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="hero-content fade-in">
+            <h1>STREETWEAR CON PROPÓSITO</h1>
+            <p class="hero-subtitle">Diseño atemporal que une funcionalidad masculina y sensibilidad femenina</p>
+            
+            <div class="trust-banner">
+                <h3><i class="fas fa-shield-alt"></i> CONFIANZA GARANTIZADA</h3>
+                <p>Compra con total seguridad. Cada prenda en 5INCO está respaldada por nuestra garantía de calidad premium, envíos rápidos y atención personalizada. Miles de clientes ya confían en nosotros para su estilo diario.</p>
+                <p style="margin-top: 1rem; font-weight: 600; color: var(--dorado);">
+                    <i class="fas fa-star"></i> Calidad Verificada | <i class="fas fa-shipping-fast"></i> Envío Gratis | <i class="fas fa-undo"></i> 30 Días Devolución
+                </p>
+            </div>
+            
+            <a href="#colecciones" class="btn btn-primary" style="margin-top: 2rem;">
+                DESCUBRIR COLECCIÓN <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- COLECCIONES -->
+    <section class="collections-section" id="colecciones">
+        <div class="section-header">
+            <h2 class="section-title">Nuestras Colecciones</h2>
+            <p class="section-subtitle">Diseño meticuloso, materiales premium y confección artesanal en cada prenda</p>
+            
+            <!-- Filtros por temporada -->
+            <div class="season-filters">
+                <button class="season-btn active" onclick="filterSeason('all')">Todas</button>
+                <button class="season-btn" onclick="filterSeason('verano')">Verano</button>
+                <button class="season-btn" onclick="filterSeason('invierno')">Invierno</button>
+            </div>
+            
+            <!-- Filtros por género -->
+            <div class="gender-filters">
+                <button class="gender-btn masculino active" onclick="filterGender('masculino')">Masculino</button>
+                <button class="gender-btn femenino" onclick="filterGender('femenino')">Femenino</button>
+                <button class="gender-btn unisex" onclick="filterGender('unisex')">Unisex</button>
+            </div>
+        </div>
+        
+        <div class="products-grid" id="products-container">
+            <!-- Productos cargados con JavaScript -->
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section class="about-section" id="nosotros">
+        <div class="about-hero">
+            <h1>Nuestra esencia</h1>
+            <p>Diseño atemporal para hombre y mujer</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Más que ropa, una filosofía</h2>
+                <p>En <strong>5INCO INSTRUMENTARIA</strong>, creemos que la moda no tiene por qué ser complicada. Nacimos con la visión de crear un armario equilibrado donde la funcionalidad masculina y la sensibilidad femenina se encuentran.</p>
+                <p>Cada prenda de nuestras colecciones es el resultado de meses de búsqueda de materiales y pruebas de calce, asegurando que lo que llevas puesto te represente en cualquier escenario. No seguimos tendencias pasajeras; creamos piezas que perduran.</p>
+                <p>Nuestro compromiso va más allá de la estética. Trabajamos con talleres locales que comparten nuestros valores de calidad y ética, garantizando condiciones laborales justas y procesos sostenibles.</p>
+            </div>
+            
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Proceso de diseño y creación de ropa minimalista">
+            </div>
+        </div>
+        
+        <!-- Valores -->
+        <div class="values-grid">
+            <div class="value-card fade-in">
+                <div class="value-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Calidad Consciente</h3>
+                <p>No creemos en la moda desechable. Seleccionamos tejidos que resisten el paso del tiempo, priorizando durabilidad y confort en cada elección.</p>
+            </div>
+            
+            <div class="value-card fade-in">
+                <div class="value-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <h3>Diseño Inclusivo</h3>
+                <p>Cortes pensados para la anatomía real, priorizando la comodidad sin perder la línea estética. Creemos que la moda debe adaptarse a ti, no al revés.</p>
+            </div>
+            
+            <div class="value-card fade-in">
+                <div class="value-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Ética Local</h3>
+                <p>Trabajamos con talleres que garantizan un trato justo y procesos transparentes. Cada prenda lleva el sello de manos argentinas expertas.</p>
+            </div>
+        </div>
+        
+        <!-- Fundadores -->
+        <div class="founders-banner">
+            <h2>El alma detrás de cada diseño</h2>
+            <p>"Creamos prendas que trascienden temporadas porque creemos en la inversión, no en el consumo. Cada puntada, cada tejido, cada detalle está pensado para acompañarte en tu vida real."</p>
+            <p style="margin-top: 2rem; font-weight: 600;">— Equipo 5INCO</p>
+        </div>
+        
+        <!-- CTA -->
+        <div class="about-cta">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">¿Listo para reinventar tu armario?</h2>
+            <p style="font-size: 1.2rem; color: var(--gris-medio); max-width: 700px; margin: 0 auto 2rem;">Descubre piezas que se convertirán en tus favoritas por años</p>
+            <div class="about-cta-buttons">
+                <a href="#colecciones" class="btn btn-primary">VER COLECCIÓN</a>
+                <a href="#contacto" class="btn btn-outline">CONTACTARNOS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact-section" id="contacto">
+        <div class="contact-card">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">¿Necesitas ayuda?</h2>
+            <p style="font-size: 1.2rem; color: var(--gris-medio); margin-bottom: 2rem;">Estamos aquí para responder todas tus preguntas sobre productos, talles o envíos</p>
+            
+            <div style="margin: 3rem 0;">
+                <i class="fas fa-comments" style="font-size: 4rem; color: var(--rojo); margin-bottom: 1.5rem;"></i>
+                <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Habla directamente con nosotros</h3>
+                <p style="color: var(--gris-medio); margin-bottom: 1rem;">Te atendemos personalmente por WhatsApp</p>
+                <p style="font-size: 1.5rem; font-weight: 600; color: var(--negro);">+54 9 261 383-1779</p>
+            </div>
+            
+            <a href="https://wa.me/5492613831779" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> CHATEAR POR WHATSAPP
+            </a>
+            
+            <p style="margin-top: 2rem; color: var(--gris-medio); font-size: 0.9rem;">
+                <i class="fas fa-clock"></i> Horario de atención: Lunes a Viernes 9-18hs
+            </p>
+        </div>
+    </section>
+
+    <!-- LOGIN ADMIN -->
+    <div class="login-modal" id="login-modal">
+        <div class="login-box">
+            <h2><i class="fas fa-lock"></i> Acceso Administrador</h2>
+            <form class="login-form" onsubmit="loginAdmin(event)">
+                <input type="text" id="admin-username" placeholder="Usuario" required>
+                <input type="password" id="admin-password" placeholder="Contraseña" required>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-sign-in-alt"></i> INGRESAR
+                </button>
+            </form>
+            <p style="text-align: center; margin-top: 1rem; color: #666; font-size: 0.9rem;">
+                Usuario: tomas | Contraseña: TOMAS2812
+            </p>
+        </div>
+    </div>
+
+    <!-- PANEL ADMINISTRADOR -->
+    <div class="admin-panel" id="admin-panel">
+        <div class="admin-header">
+            <h1 style="font-size: 2.5rem;">
+                <i class="fas fa-cogs"></i> Panel de Administración
+            </h1>
+            <button class="btn btn-outline" onclick="logoutAdmin()">
+                <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+            </button>
+        </div>
+        
+        <div class="admin-tabs">
+            <button class="admin-tab active" onclick="switchAdminTab('products')">
+                <i class="fas fa-tshirt"></i> Productos
+            </button>
+            <button class="admin-tab" onclick="switchAdminTab('categories')">
+                <i class="fas fa-tags"></i> Categorías
+            </button>
+            <button class="admin-tab" onclick="switchAdminTab('colors')">
+                <i class="fas fa-palette"></i> Colores
+            </button>
+        </div>
+        
+        <!-- Gestión de Productos -->
+        <div class="admin-content" id="products-tab">
+            <h2 style="margin-bottom: 2rem;">
+                <i class="fas fa-plus-circle"></i> Agregar Nuevo Producto
+            </h2>
+            
+            <form id="product-form" onsubmit="addProductFromForm(event)">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nombre *</label>
+                        <input type="text" id="product-name" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 8px;" required>
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Precio (USD) *</label>
+                        <input type="number" id="product-price" step="0.01" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 8px;" required>
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Género *</label>
+                        <select id="product-gender" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 8px;" required>
+                            <option value="">Seleccionar</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="unisex">Unisex</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Temporada *</label>
+                        <select id="product-season" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 8px;" required>
+                            <option value="">Seleccionar</option>
+                            <option value="verano">Verano</option>
+                            <option value="invierno">Invierno</option>
+                            <option value="todo">Todo el año</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Categoría *</label>
+                        <select id="product-category" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 8px;" required>
+                            <option value="">Seleccionar</option>
+                            <!-- Categorías dinámicas -->
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Stock *</label>
+                        <input type="number" id="product-stock" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 8px;" required>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Colores Disponibles *</label>
+                    <div id="colors-container" style="display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+                        <!-- Colores dinámicos -->
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <input type="text" id="new-color" placeholder="Nuevo color (ej: Azul Marino)" style="padding: 0.8rem; border: 2px solid #ddd; border-radius: 8px; width: 200px;">
+                        <button type="button" class="btn" onclick="addNewColor()" style="margin-left: 1rem;">
+                            <i class="fas fa-plus"></i> Agregar Color
+                        </button>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Descripción *</label>
+                    <textarea id="product-description" rows="4" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 8px;" required></textarea>
+                </div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">URL de Imagen *</label>
+                    <input type="text" id="product-image" placeholder="https://ejemplo.com/imagen.jpg" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 8px;">
+                    <small style="color: #666; display: block; margin-top: 0.5rem;">Usa imágenes de Unsplash: https://images.unsplash.com/...</small>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="padding: 1rem 3rem; font-size: 1.1rem;">
+                    <i class="fas fa-save"></i> GUARDAR PRODUCTO
+                </button>
+                <button type="button" class="btn" onclick="clearProductForm()" style="margin-left: 1rem;">
+                    <i class="fas fa-times"></i> LIMPIAR
+                </button>
+            </form>
+            
+            <div style="margin-top: 4rem;">
+                <h2 style="margin-bottom: 2rem; border-bottom: 2px solid #eee; padding-bottom: 1rem;">
+                    <i class="fas fa-list"></i> Productos Activos
+                </h2>
+                <div id="admin-products-list">
+                    <!-- Productos dinámicos -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Gestión de Categorías -->
+        <div class="admin-content categories-manager" id="categories-tab">
+            <h2 style="margin-bottom: 2rem;">
+                <i class="fas fa-tags"></i> Gestión de Categorías
+            </h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem;">
+                <!-- Formulario de categoría -->
+                <div>
+                    <h3 style="margin-bottom: 1.5rem;">Agregar Nueva Categoría</h3>
+                    <form id="category-form" onsubmit="addCategory(event)">
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nombre *</label>
+                            <input type="text" id="category-name" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 8px;" required>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Icono (FontAwesome)</label>
+                            <input type="text" id="category-icon" placeholder="fas fa-tshirt" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 8px;">
+                            <small style="color: #666;">Ej: fas fa-tshirt, fas fa-hat-cowboy</small>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> AGREGAR CATEGORÍA
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Lista de categorías -->
+                <div>
+                    <h3 style="margin-bottom: 1.5rem;">Categorías Existentes</h3>
+                    <div class="categories-list" id="categories-list">
+                        <!-- Categorías dinámicas -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Gestión de Colores -->
+        <div class="admin-content categories-manager" id="colors-tab">
+            <h2 style="margin-bottom: 2rem;">
+                <i class="fas fa-palette"></i> Gestión de Colores
+            </h2>
+            
+            <div style="background: #f8f9fa; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+                <h3 style="margin-bottom: 1.5rem;">Colores Disponibles en el Sistema</h3>
+                <div id="system-colors" style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                    <!-- Colores del sistema -->
+                </div>
+            </div>
+            
+            <div>
+                <h3 style="margin-bottom: 1.5rem;">Agregar Nuevo Color</h3>
+                <div style="display: flex; gap: 1rem; align-items: flex-end;">
+                    <div style="flex: 1;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nombre del Color *</label>
+                        <input type="text" id="color-name" placeholder="Ej: Azul Marino" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 8px;">
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Código HEX</label>
+                        <input type="color" id="color-hex" style="width: 60px; height: 60px; border: none;">
+                    </div>
+                    
+                    <div>
+                        <button class="btn btn-primary" onclick="addSystemColor()">
+                            <i class="fas fa-plus"></i> AGREGAR
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARRITO -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h2 style="font-size: 1.8rem;">
+                <i class="fas fa-shopping-bag"></i> Tu Carrito
+            </h2>
+            <button class="icon-btn" onclick="toggleCart()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="cart-items" id="cart-items">
+            <div id="empty-cart" style="text-align: center; padding: 3rem; color: #666;">
+                <i class="fas fa-shopping-bag" style="font-size: 4rem; margin-bottom: 1rem; opacity: 0.3;"></i>
+                <p style="font-size: 1.2rem;">Tu carrito está vacío</p>
+                <p style="margin-top: 1rem;">Agrega productos para continuar</p>
+            </div>
+        </div>
+        
+        <div class="cart-footer" id="cart-total" style="display: none;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem; font-size: 1.2rem;">
+                <span>Total:</span>
+                <span style="font-weight: 700; font-size: 1.5rem;">$<span id="total-price">0</span></span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%; padding: 1.2rem;" onclick="checkout()">
+                <i class="fas fa-lock"></i> FINALIZAR COMPRA
+            </button>
+            <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="toggleCart()">
+                SEGUIR COMPRANDO
+            </button>
+        </div>
+    </div>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/5492613831779" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>5INCO INSTRUMENTARIA</h3>
+                <p>Streetwear premium con propósito. Diseño atemporal, calidad excepcional y ética en cada detalle.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#colecciones">Colecciones</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Ayuda</h3>
+                <div class="footer-links">
+                    <a href="#">Guía de Tallas</a>
+                    <a href="#">Envíos y Devoluciones</a>
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <div class="footer-links">
+                    <a href="https://wa.me/5492613831779" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp: +54 9 261 383-1779
+                    </a>
+                    <a href="mailto:info@5inco.com">
+                        <i class="fas fa-envelope"></i> info@5inco.com
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-map-marker-alt"></i> Mendoza, Argentina
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>© 2024 5INCO INSTRUMENTARIA. Todos los derechos reservados.</p>
+            <p style="margin-top: 0.5rem;">Streetwear | Actitud | Estilo Urbano</p>
+        </div>
+    </footer>
+
+    <script>
+        // ============================================
+        // DATOS Y CONFIGURACIÓN INICIAL
+        // ============================================
+        
+        // Credenciales de administrador
+        const ADMIN_CREDENTIALS = {
+            username: 'tomas',
+            password: 'TOMAS2812'
+        };
+        
+        // Categorías iniciales
+        let categories = [
+            { id: 1, name: 'Remeras', icon: 'fas fa-tshirt' },
+            { id: 2, name: 'Buzos', icon: 'fas fa-vest' },
+            { id: 3, name: 'Pantalones', icon: 'fas fa-vest-patches' },
+            { id: 4, name: 'Gorras', icon: 'fas fa-hat-cowboy' },
+            { id: 5, name: 'Accesorios', icon: 'fas fa-glasses' }
+        ];
+        
+        // Colores disponibles en el sistema
+        let systemColors = [
+            { name: 'Negro', hex: '#111111' },
+            { name: 'Blanco', hex: '#FFFFFF' },
+            { name: 'Rojo', hex: '#E63946' },
+            { name: 'Gris', hex: '#666666' },
+            { name: 'Azul Marino', hex: '#1E3A8A' },
+            { name: 'Beige', hex: '#F5EFE6' },
+            { name: 'Verde Oliva', hex: '#556B2F' },
+            { name: 'Azul Denim', hex: '#1560BD' }
+        ];
+        
+        // Productos iniciales
+        let products = [
+            {
+                id: 1,
+                name: "Remera Oversize Essential",
+                price: 34.99,
+                gender: "unisex",
+                season: "verano",
+                category: "Remeras",
+                description: "Remera oversize 100% algodón orgánico, corte perfecto para día a día.",
+                image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                colors: ["Negro", "Blanco", "Gris"],
+                stock: 50,
+                featured: true
+            },
+            {
+                id: 2,
+                name: "Buzo Hoodie Premium",
+                price: 69.99,
+                gender: "masculino",
+                season: "invierno",
+                category: "Buzos",
+                description: "Buzo con capucha, tejido French Terry, ideal para clima frío.",
+                image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                colors: ["Negro", "Gris", "Verde Oliva"],
+                stock: 30,
+                featured: true
+            },
+            {
+                id: 3,
+                name: "Pantalón Cargo Utility",
+                price: 79.99,
+                gender: "masculino",
+                season: "todo",
+                category: "Pantalones",
+                description: "Pantalón cargo con múltiples bolsillos, tela resistente y cómoda.",
+                image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                colors: ["Negro", "Verde Oliva", "Beige"],
+                stock: 25,
+                featured: false
+            },
+            {
+                id: 4,
+                name: "Gorra 5INCO Embroidered",
+                price: 29.99,
+                gender: "unisex",
+                season: "verano",
+                category: "Gorras",
+                description: "Gorra ajustable con logo bordado, visor curvo.",
+                image: "https://images.unsplash.com/photo-1521369909029-2afed882baee?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                colors: ["Negro", "Blanco", "Azul Marino"],
+                stock: 100,
+                featured: true
+            },
+            {
+                id: 5,
+                name: "Top Cropped Feminino",
+                price: 27.99,
+                gender: "femenino",
+                season: "verano",
+                category: "Remeras",
+                description: "Top cropped de algodón, diseño minimalista, perfecto para combinar.",
+                image: "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                colors: ["Blanco", "Negro", "Rojo"],
+                stock: 45,
+                featured: true
+            },
+            {
+                id: 6,
+                name: "Cardigan Oversize",
+                price: 64.99,
+                gender: "femenino",
+                season: "invierno",
+                category: "Buzos",
+                description: "Cardigan oversized, punto suave, ideal para capas de estilo.",
+                image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                colors: ["Beige", "Gris", "Azul Marino"],
+                stock: 35,
+                featured: false
+            }
+        ];
+        
+        let cart = [];
+        let currentProductId = 6;
+        let currentCategoryId = 5;
+        let currentColorId = 8;
+        let currentFilterGender = 'masculino';
+        let currentFilterSeason = 'all';
+        
+        // ============================================
+        // INICIALIZACIÓN
+        // ============================================
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar vistas
+            renderCategoriesSelect();
+            renderSystemColors();
+            renderProducts();
+            updateCartCount();
+            
+            // Inicializar panel admin
+            renderAdminProducts();
+            renderCategoriesList();
+            
+            // Configurar filtros iniciales
+            updateActiveFilters();
+            
+            // Inicializar animaciones
+            initAnimations();
+        });
+        
+        // ============================================
+        // FUNCIONES DE PRODUCTOS Y FILTROS
+        // ============================================
+        
+        function renderProducts() {
+            const container = document.getElementById('products-container');
+            container.innerHTML = '';
+            
+            // Filtrar productos
+            const filteredProducts = products.filter(product => {
+                // Filtrar por género
+                if (currentFilterGender !== 'all') {
+                    if (currentFilterGender === 'masculino') {
+                        if (!['masculino', 'unisex'].includes(product.gender)) return false;
+                    } else if (currentFilterGender === 'femenino') {
+                        if (!['femenino', 'unisex'].includes(product.gender)) return false;
+                    } else if (currentFilterGender !== product.gender) {
+                        return false;
+                    }
+                }
+                
+                // Filtrar por temporada
+                if (currentFilterSeason !== 'all' && product.season !== currentFilterSeason && product.season !== 'todo') {
+                    return false;
+                }
+                
+                return true;
+            });
+            
+            if (filteredProducts.length === 0) {
+                container.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 4rem; color: #666;">
+                        <i class="fas fa-search" style="font-size: 4rem; margin-bottom: 1rem; opacity: 0.3;"></i>
+                        <h3 style="margin-bottom: 1rem;">No encontramos productos</h3>
+                        <p>Intenta con otros filtros o explora toda nuestra colección</p>
+                        <button class="btn" onclick="resetFilters()" style="margin-top: 1.5rem;">
+                            <i class="fas fa-redo"></i> VER TODOS LOS PRODUCTOS
+                        </button>
+                    </div>
+                `;
+                return;
+            }
+            
+            filteredProducts.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card fade-in';
+                
+                // Determinar color de badge según género
+                let badgeColor = '#111111';
+                let badgeText = 'Unisex';
+                if (product.gender === 'masculino') {
+                    badgeColor = '#1E3A8A';
+                    badgeText = 'Masculino';
+                } else if (product.gender === 'femenino') {
+                    badgeColor = '#BE185D';
+                    badgeText = 'Femenino';
+                }
+                
+                productCard.innerHTML = `
+                    ${product.featured ? `<div class="product-badge" style="background: ${badgeColor};">${badgeText}</div>` : ''}
+                    
+                    <div class="product-img-container">
+                        <img src="${product.image}" alt="${product.name}" class="product-img">
+                    </div>
+                    
+                    <div class="product-info">
+                        <div class="product-category">
+                            <i class="fas fa-tag"></i> ${product.category}
+                        </div>
+                        
+                        <h3 class="product-title">${product.name}</h3>
+                        
+                        <p class="product-description">${product.description}</p>
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <div>
+                                <span class="product-price">$${product.price.toFixed(2)}</span>
+                            </div>
+                            <div style="font-size: 0.9rem; color: #666;">
+                                <i class="fas fa-box"></i> ${product.stock} disponibles
+                            </div>
+                        </div>
+                        
+                        <div class="product-colors">
+                            ${product.colors.map(color => {
+                                const colorObj = systemColors.find(c => c.name === color);
+                                const hex = colorObj ? colorObj.hex : '#111111';
+                                return `<div class="color-dot" style="background-color: ${hex};" title="${color}"></div>`;
+                            }).join('')}
+                        </div>
+                        
+                        <div class="product-meta">
+                            <span><i class="fas fa-${product.season === 'verano' ? 'sun' : product.season === 'invierno' ? 'snowflake' : 'calendar-alt'}"></i> ${product.season === 'verano' ? 'Verano' : product.season === 'invierno' ? 'Invierno' : 'Todo el año'}</span>
+                            <span style="color: ${badgeColor}; font-weight: 600;">
+                                <i class="fas fa-${product.gender === 'masculino' ? 'male' : product.gender === 'femenino' ? 'female' : 'transgender'}"></i> ${badgeText}
+                            </span>
+                        </div>
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart(${product.id})">
+                            <i class="fas fa-shopping-bag"></i> AGREGAR AL CARRITO
+                        </button>
+                    </div>
+                `;
+                container.appendChild(productCard);
+            });
+        }
+        
+        function filterGender(gender) {
+            currentFilterGender = gender;
+            document.querySelectorAll('.gender-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase().includes(gender.toLowerCase())) {
+                    btn.classList.add('active');
+                }
+            });
+            renderProducts();
+        }
+        
+        function filterSeason(season) {
+            currentFilterSeason = season;
+            document.querySelectorAll('.season-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase().includes(season.toLowerCase()) || 
+                    (season === 'all' && btn.textContent === 'Todas')) {
+                    btn.classList.add('active');
+                }
+            });
+            renderProducts();
+        }
+        
+        function resetFilters() {
+            currentFilterGender = 'masculino';
+            currentFilterSeason = 'all';
+            updateActiveFilters();
+            renderProducts();
+        }
+        
+        function updateActiveFilters() {
+            document.querySelectorAll('.gender-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase().includes(currentFilterGender)) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            document.querySelectorAll('.season-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if ((currentFilterSeason === 'all' && btn.textContent === 'Todas') ||
+                    btn.textContent.toLowerCase().includes(currentFilterSeason)) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+        
+        // ============================================
+        // PANEL DE ADMINISTRACIÓN
+        // ============================================
+        
+        function openAdminLogin() {
+            document.getElementById('login-modal').classList.add('active');
+        }
+        
+        function loginAdmin(event) {
+            event.preventDefault();
+            
+            const username = document.getElementById('admin-username').value;
+            const password = document.getElementById('admin-password').value;
+            
+            if (username === ADMIN_CREDENTIALS.username && password === ADMIN_CREDENTIALS.password) {
+                // Cerrar modal de login
+                document.getElementById('login-modal').classList.remove('active');
+                
+                // Mostrar panel admin
+                document.getElementById('admin-panel').classList.add('active');
+                
+                // Ocultar otras secciones
+                document.querySelectorAll('section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                
+                // Scroll al inicio
+                window.scrollTo(0, 0);
+                
+                // Mostrar notificación
+                showNotification('✅ Acceso concedido. Bienvenido al panel de administración.', 'success');
+            } else {
+                showNotification('❌ Usuario o contraseña incorrectos', 'error');
+            }
+        }
+        
+        function logoutAdmin() {
+            // Ocultar panel admin
+            document.getElementById('admin-panel').classList.remove('active');
+            
+            // Mostrar otras secciones
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'block';
+            });
+            
+            // Scroll al inicio
+            window.scrollTo(0, 0);
+            
+            showNotification('👋 Sesión cerrada correctamente', 'info');
+        }
+        
+        function switchAdminTab(tab) {
+            // Actualizar pestañas activas
+            document.querySelectorAll('.admin-tab').forEach(t => {
+                t.classList.remove('active');
+            });
+            document.querySelectorAll(`.admin-tab`).forEach(t => {
+                if (t.innerHTML.includes(tab.charAt(0).toUpperCase() + tab.slice(1))) {
+                    t.classList.add('active');
+                }
+            });
+            
+            // Mostrar contenido de la pestaña seleccionada
+            document.getElementById('products-tab').style.display = tab === 'products' ? 'block' : 'none';
+            document.getElementById('categories-tab').style.display = tab === 'categories' ? 'block' : 'none';
+            document.getElementById('colors-tab').style.display = tab === 'colors' ? 'block' : 'none';
+            
+            // Actualizar contenido si es necesario
+            if (tab === 'categories') {
+                renderCategoriesList();
+            } else if (tab === 'colors') {
+                renderSystemColors();
+            }
+        }
+        
+        // ============================================
+        // GESTIÓN DE PRODUCTOS (ADMIN)
+        // ============================================
+        
+        function renderCategoriesSelect() {
+            const select = document.getElementById('product-category');
+            select.innerHTML = '<option value="">Seleccionar</option>';
+            categories.forEach(category => {
+                select.innerHTML += `<option value="${category.name}">${category.name}</option>`;
+            });
+        }
+        
+        function renderSystemColors() {
+            const container = document.getElementById('colors-container');
+            const systemContainer = document.getElementById('system-colors');
+            
+            container.innerHTML = '';
+            systemContainer.innerHTML = '';
+            
+            systemColors.forEach((color, index) => {
+                // Para selector de productos
+                container.innerHTML += `
+                    <label style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; background: #fff; border: 2px solid #ddd; border-radius: 6px; cursor: pointer;">
+                        <input type="checkbox" name="product-color" value="${color.name}" style="margin: 0;">
+                        <div style="width: 20px; height: 20px; border-radius: 50%; background-color: ${color.hex};"></div>
+                        <span>${color.name}</span>
+                    </label>
+                `;
+                
+                // Para gestión de colores
+                systemContainer.innerHTML += `
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                        <div style="width: 60px; height: 60px; border-radius: 8px; background-color: ${color.hex}; border: 2px solid #ddd;"></div>
+                        <span style="font-size: 0.9rem; font-weight: 600;">${color.name}</span>
+                        <button onclick="deleteSystemColor(${index})" style="background: #f44336; color: white; border: none; padding: 0.25rem 0.75rem; border-radius: 4px; cursor: pointer; font-size: 0.8rem;">
+                            Eliminar
+                        </button>
+                    </div>
+                `;
+            });
+        }
+        
+        function addNewColor() {
+            const newColorInput = document.getElementById('new-color');
+            const colorName = newColorInput.value.trim();
+            
+            if (!colorName) {
+                showNotification('❌ Por favor ingresa un nombre para el color', 'error');
+                return;
+            }
+            
+            // Verificar si ya existe
+            if (systemColors.some(c => c.name.toLowerCase() === colorName.toLowerCase())) {
+                showNotification('⚠️ Este color ya existe en el sistema', 'warning');
+                return;
+            }
+            
+            // Agregar color con un HEX por defecto (podría mejorarse con un selector de color)
+            systemColors.push({
+                name: colorName,
+                hex: '#CCCCCC'
+            });
+            
+            newColorInput.value = '';
+            renderSystemColors();
+            showNotification(`✅ Color "${colorName}" agregado al sistema`, 'success');
+        }
+        
+        function addSystemColor() {
+            const colorName = document.getElementById('color-name').value.trim();
+            const colorHex = document.getElementById('color-hex').value;
+            
+            if (!colorName) {
+                showNotification('❌ Por favor ingresa un nombre para el color', 'error');
+                return;
+            }
+            
+            // Verificar si ya existe
+            if (systemColors.some(c => c.name.toLowerCase() === colorName.toLowerCase())) {
+                showNotification('⚠️ Este color ya existe en el sistema', 'warning');
+                return;
+            }
+            
+            // Agregar color
+            systemColors.push({
+                name: colorName,
+                hex: colorHex
+            });
+            
+            document.getElementById('color-name').value = '';
+            renderSystemColors();
+            showNotification(`✅ Color "${colorName}" agregado al sistema`, 'success');
+        }
+        
+        function deleteSystemColor(index) {
+            if (confirm('¿Estás seguro de eliminar este color?')) {
+                systemColors.splice(index, 1);
+                renderSystemColors();
+                showNotification('🗑️ Color eliminado del sistema', 'info');
+            }
+        }
+        
+        function addProductFromForm(event) {
+            event.preventDefault();
+            
+            // Obtener valores del formulario
+            const name = document.getElementById('product-name').value;
+            const price = parseFloat(document.getElementById('product-price').value);
+            const gender = document.getElementById('product-gender').value;
+            const season = document.getElementById('product-season').value;
+            const category = document.getElementById('product-category').value;
+            const stock = parseInt(document.getElementById('product-stock').value);
+            const description = document.getElementById('product-description').value;
+            const image = document.getElementById('product-image').value || 'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80';
+            
+            // Obtener colores seleccionados
+            const colorCheckboxes = document.querySelectorAll('input[name="product-color"]:checked');
+            const colors = Array.from(colorCheckboxes).map(cb => cb.value);
+            
+            // Validar
+            if (!name || !price || !gender || !season || !category || !stock || !description || colors.length === 0) {
+                showNotification('❌ Por favor completa todos los campos obligatorios', 'error');
+                return;
+            }
+            
+            // Crear nuevo producto
+            currentProductId++;
+            const newProduct = {
+                id: currentProductId,
+                name,
+                price,
+                gender,
+                season,
+                category,
+                stock,
+                description,
+                image,
+                colors,
+                featured: false
+            };
+            
+            // Agregar al array de productos
+            products.push(newProduct);
+            
+            // Actualizar vistas
+            renderProducts();
+            renderAdminProducts();
+            
+            // Limpiar formulario
+            clearProductForm();
+            
+            showNotification('✅ Producto agregado correctamente!', 'success');
+        }
+        
+        function renderAdminProducts() {
+            const container = document.getElementById('admin-products-list');
+            container.innerHTML = '';
+            
+            if (products.length === 0) {
+                container.innerHTML = '<p style="text-align: center; padding: 2rem; color: #666;">No hay productos agregados</p>';
+                return;
+            }
+            
+            products.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.className = 'cart-item';
+                productDiv.style.border = '1px solid #eee';
+                productDiv.style.marginBottom = '1rem';
+                productDiv.style.padding = '1.5rem';
+                productDiv.style.borderRadius = '10px';
+                productDiv.style.display = 'flex';
+                productDiv.style.alignItems = 'center';
+                productDiv.style.gap = '1.5rem';
+                
+                // Determinar color según género
+                let genderColor = '#111111';
+                if (product.gender === 'masculino') genderColor = '#1E3A8A';
+                if (product.gender === 'femenino') genderColor = '#BE185D';
+                if (product.gender === 'unisex') genderColor = '#047857';
+                
+                productDiv.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}" style="width: 100px; height: 100px; object-fit: cover; border-radius: 8px;">
+                    <div style="flex: 1;">
+                        <h4 style="margin-bottom: 0.5rem; font-size: 1.2rem;">${product.name}</h4>
+                        <div style="display: flex; gap: 1rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
+                            <span style="background: ${genderColor}; color: white; padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600;">
+                                ${product.gender === 'masculino' ? 'Masculino' : product.gender === 'femenino' ? 'Femenino' : 'Unisex'}
+                            </span>
+                            <span style="background: #f0f0f0; padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">
+                                ${product.season === 'verano' ? 'Verano' : product.season === 'invierno' ? 'Invierno' : 'Todo el año'}
+                            </span>
+                            <span style="background: #e8f4ff; padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">
+                                ${product.category}
+                            </span>
+                        </div>
+                        <p style="color: var(--rojo); font-weight: bold; font-size: 1.3rem;">$${product.price.toFixed(2)}</p>
+                        <p style="color: #666; margin-top: 0.5rem; font-size: 0.9rem;">${product.colors.join(', ')} | Stock: ${product.stock}</p>
+                    </div>
+                    <div>
+                        <button onclick="editProduct(${product.id})" style="background: #4CAF50; color: white; border: none; padding: 0.6rem 1.2rem; border-radius: 6px; margin-bottom: 0.5rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-edit"></i> Editar
+                        </button>
+                        <button onclick="deleteProduct(${product.id})" style="background: #f44336; color: white; border: none; padding: 0.6rem 1.2rem; border-radius: 6px; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-trash"></i> Eliminar
+                        </button>
+                    </div>
+                `;
+                container.appendChild(productDiv);
+            });
+        }
+        
+        function editProduct(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+            
+            // Llenar formulario
+            document.getElementById('product-name').value = product.name;
+            document.getElementById('product-price').value = product.price;
+            document.getElementById('product-gender').value = product.gender;
+            document.getElementById('product-season').value = product.season;
+            document.getElementById('product-category').value = product.category;
+            document.getElementById('product-stock').value = product.stock;
+            document.getElementById('product-description').value = product.description;
+            document.getElementById('product-image').value = product.image;
+            
+            // Marcar colores
+            document.querySelectorAll('input[name="product-color"]').forEach(cb => {
+                cb.checked = product.colors.includes(cb.value);
+            });
+            
+            // Cambiar botón a actualizar
+            const form = document.getElementById('product-form');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            submitBtn.innerHTML = '<i class="fas fa-save"></i> ACTUALIZAR PRODUCTO';
+            submitBtn.onclick = function(e) {
+                e.preventDefault();
+                updateProduct(productId);
+            };
+            
+            showNotification('✏️ Modo edición activado. Modifica el producto y haz clic en "Actualizar".', 'info');
+        }
+        
+        function updateProduct(productId) {
+            const name = document.getElementById('product-name').value;
+            const price = parseFloat(document.getElementById('product-price').value);
+            const gender = document.getElementById('product-gender').value;
+            const season = document.getElementById('product-season').value;
+            const category = document.getElementById('product-category').value;
+            const stock = parseInt(document.getElementById('product-stock').value);
+            const description = document.getElementById('product-description').value;
+            const image = document.getElementById('product-image').value;
+            
+            // Obtener colores seleccionados
+            const colors = Array.from(document.querySelectorAll('input[name="product-color"]:checked')).map(cb => cb.value);
+            
+            // Actualizar producto
+            const index = products.findIndex(p => p.id === productId);
+            if (index !== -1) {
+                products[index] = {
+                    ...products[index],
+                    name,
+                    price,
+                    gender,
+                    season,
+                    category,
+                    stock,
+                    description,
+                    image,
+                    colors
+                };
+                
+                // Actualizar vistas
+                renderProducts();
+                renderAdminProducts();
+                
+                // Restaurar formulario
+                clearProductForm();
+                
+                showNotification('✅ Producto actualizado correctamente!', 'success');
+            }
+        }
+        
+        function deleteProduct(productId) {
+            if (confirm('¿Estás seguro de eliminar este producto? Esta acción no se puede deshacer.')) {
+                products = products.filter(p => p.id !== productId);
+                renderProducts();
+                renderAdminProducts();
+                showNotification('🗑️ Producto eliminado correctamente', 'info');
+            }
+        }
+        
+        function clearProductForm() {
+            document.getElementById('product-form').reset();
+            const submitBtn = document.querySelector('#product-form button[type="submit"]');
+            submitBtn.innerHTML = '<i class="fas fa-save"></i> GUARDAR PRODUCTO';
+            submitBtn.onclick = function(e) {
+                e.preventDefault();
+                addProductFromForm(e);
+            };
+        }
+        
+        // ============================================
+        // GESTIÓN DE CATEGORÍAS (ADMIN)
+        // ============================================
+        
+        function renderCategoriesList() {
+            const container = document.getElementById('categories-list');
+            container.innerHTML = '';
+            
+            categories.forEach(category => {
+                const categoryCard = document.createElement('div');
+                categoryCard.className = 'category-card';
+                categoryCard.innerHTML = `
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <i class="${category.icon}" style="font-size: 1.5rem; color: var(--rojo);"></i>
+                        <h4 style="margin: 0; font-size: 1.2rem;">${category.name}</h4>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button onclick="editCategory(${category.id})" style="flex: 1; background: #4CAF50; color: white; border: none; padding: 0.5rem; border-radius: 6px; cursor: pointer;">
+                            <i class="fas fa-edit"></i> Editar
+                        </button>
+                        <button onclick="deleteCategory(${category.id})" style="flex: 1; background: #f44336; color: white; border: none; padding: 0.5rem; border-radius: 6px; cursor: pointer;">
+                            <i class="fas fa-trash"></i> Eliminar
+                        </button>
+                    </div>
+                `;
+                container.appendChild(categoryCard);
+            });
+        }
+        
+        function addCategory(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('category-name').value.trim();
+            const icon = document.getElementById('category-icon').value.trim() || 'fas fa-tag';
+            
+            if (!name) {
+                showNotification('❌ Por favor ingresa un nombre para la categoría', 'error');
+                return;
+            }
+            
+            // Verificar si ya existe
+            if (categories.some(c => c.name.toLowerCase() === name.toLowerCase())) {
+                showNotification('⚠️ Esta categoría ya existe', 'warning');
+                return;
+            }
+            
+            // Agregar categoría
+            currentCategoryId++;
+            categories.push({
+                id: currentCategoryId,
+                name,
+                icon
+            });
+            
+            // Actualizar vistas
+            renderCategoriesSelect();
+            renderCategoriesList();
+            
+            // Limpiar formulario
+            document.getElementById('category-form').reset();
+            
+            showNotification(`✅ Categoría "${name}" agregada correctamente`, 'success');
+        }
+        
+        function editCategory(categoryId) {
+            const category = categories.find(c => c.id === categoryId);
+            if (!category) return;
+            
+            document.getElementById('category-name').value = category.name;
+            document.getElementById('category-icon').value = category.icon;
+            
+            // Cambiar botón a actualizar
+            const form = document.getElementById('category-form');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            submitBtn.innerHTML = '<i class="fas fa-save"></i> ACTUALIZAR CATEGORÍA';
+            submitBtn.onclick = function(e) {
+                e.preventDefault();
+                updateCategory(categoryId);
+            };
+            
+            showNotification('✏️ Editando categoría. Modifica y haz clic en "Actualizar".', 'info');
+        }
+        
+        function updateCategory(categoryId) {
+            const name = document.getElementById('category-name').value.trim();
+            const icon = document.getElementById('category-icon').value.trim() || 'fas fa-tag';
+            
+            // Actualizar categoría
+            const index = categories.findIndex(c => c.id === categoryId);
+            if (index !== -1) {
+                categories[index] = {
+                    ...categories[index],
+                    name,
+                    icon
+                };
+                
+                // Actualizar vistas
+                renderCategoriesSelect();
+                renderCategoriesList();
+                
+                // Restaurar formulario
+                document.getElementById('category-form').reset();
+                const submitBtn = document.querySelector('#category-form button[type="submit"]');
+                submitBtn.innerHTML = '<i class="fas fa-plus"></i> AGREGAR CATEGORÍA';
+                submitBtn.onclick = function(e) {
+                    e.preventDefault();
+                    addCategory(e);
+                };
+                
+                showNotification('✅ Categoría actualizada correctamente', 'success');
+            }
+        }
+        
+        function deleteCategory(categoryId) {
+            if (confirm('¿Estás seguro de eliminar esta categoría? Los productos asociados quedarán sin categoría.')) {
+                categories = categories.filter(c => c.id !== categoryId);
+                renderCategoriesSelect();
+                renderCategoriesList();
+                showNotification('🗑️ Categoría eliminada correctamente', 'info');
+            }
+        }
+        
+        // ============================================
+        // CARRITO DE COMPRAS
+        // ============================================
+        
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+            
+            // Verificar stock
+            if (product.stock <= 0) {
+                showNotification('❌ Producto sin stock disponible', 'error');
+                return;
+            }
+            
+            // Buscar si ya está en el carrito
+            const existingItem = cart.find(item => item.id === productId);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    ...product,
+                    quantity: 1
+                });
+            }
+            
+            updateCartCount();
+            updateCartDisplay();
+            
+            showNotification(`✅ "${product.name}" agregado al carrito`, 'success');
+        }
+        
+        function updateCartCount() {
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.querySelector('.cart-count').textContent = totalItems;
+        }
+        
+        function toggleCart() {
+            const cartModal = document.getElementById('cart-modal');
+            cartModal.classList.toggle('active');
+            updateCartDisplay();
+        }
+        
+        function updateCartDisplay() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const emptyCartMsg = document.getElementById('empty-cart');
+            const cartTotal = document.getElementById('cart-total');
+            
+            if (cart.length === 0) {
+                emptyCartMsg.style.display = 'block';
+                cartTotal.style.display = 'none';
+                return;
+            }
+            
+            emptyCartMsg.style.display = 'none';
+            cartTotal.style.display = 'block';
+            
+            let html = '';
+            let total = 0;
+            
+            cart.forEach((item, index) => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                
+                html += `
+                    <div class="cart-item" style="display: flex; gap: 1rem; padding: 1.5rem 0; border-bottom: 1px solid #eee;">
+                        <img src="${item.image}" alt="${item.name}" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px;">
+                        <div style="flex: 1;">
+                            <h4 style="margin-bottom: 0.5rem;">${item.name}</h4>
+                            <p style="color: #666; margin-bottom: 0.5rem;">$${item.price.toFixed(2)} c/u</p>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 0.5rem; background: #f5f5f5; padding: 0.5rem 1rem; border-radius: 6px;">
+                                    <button onclick="updateCartQuantity(${index}, -1)" style="background: none; border: none; font-size: 1.2rem; cursor: pointer; color: #666;">-</button>
+                                    <span style="font-weight: 600; min-width: 30px; text-align: center;">${item.quantity}</span>
+                                    <button onclick="updateCartQuantity(${index}, 1)" style="background: none; border: none; font-size: 1.2rem; cursor: pointer; color: #666;">+</button>
+                                </div>
+                                <span style="font-weight: 600; color: var(--rojo);">$${itemTotal.toFixed(2)}</span>
+                            </div>
+                        </div>
+                        <button onclick="removeFromCart(${index})" style="align-self: flex-start; color: #f44336; border: none; background: none; cursor: pointer; font-size: 1.2rem; padding: 0.5rem;">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                `;
+            });
+            
+            cartItemsContainer.innerHTML = html;
+            document.getElementById('total-price').textContent = total.toFixed(2);
+        }
+        
+        function updateCartQuantity(index, change) {
+            const newQuantity = cart[index].quantity + change;
+            
+            if (newQuantity < 1) {
+                removeFromCart(index);
+                return;
+            }
+            
+            cart[index].quantity = newQuantity;
+            updateCartCount();
+            updateCartDisplay();
+        }
+        
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartCount();
+            updateCartDisplay();
+            showNotification('🗑️ Producto eliminado del carrito', 'info');
+        }
+        
+        function checkout() {
+            if (cart.length === 0) return;
+            
+            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            
+            // Simular proceso de pago
+            showNotification('🔄 Procesando tu compra...', 'info');
+            
+            setTimeout(() => {
+                alert(`🎉 ¡Compra realizada con éxito!\n\nTotal: $${total.toFixed(2)}\n\nGracias por tu compra en 5INCO INSTRUMENTARIA. Te contactaremos para coordinar el envío.`);
+                
+                // Vaciar carrito
+                cart = [];
+                updateCartCount();
+                updateCartDisplay();
+                toggleCart();
+            }, 1500);
+        }
+        
+        // ============================================
+        // FUNCIONES AUXILIARES
+        // ============================================
+        
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+        
+        function showNotification(message, type = 'info') {
+            // Crear notificación
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: ${type === 'success' ? '#4CAF50' : type === 'error' ? '#f44336' : type === 'warning' ? '#FF9800' : '#2196F3'};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 10px;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+                z-index: 9999;
+                animation: slideInUp 0.3s ease, fadeOut 0.3s ease 2.7s forwards;
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+                font-weight: 500;
+                max-width: 90%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            `;
+            
+            notification.innerHTML = `
+                ${type === 'success' ? '✅' : type === 'error' ? '❌' : type === 'warning' ? '⚠️' : 'ℹ️'}
+                ${message}
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Eliminar después de 3 segundos
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.style.animation = 'slideOutDown 0.3s ease';
+                    setTimeout(() => {
+                        if (notification.parentNode) {
+                            document.body.removeChild(notification);
+                        }
+                    }, 300);
+                }
+            }, 3000);
+            
+            // Agregar estilos de animación si no existen
+            if (!document.querySelector('#notification-styles')) {
+                const style = document.createElement('style');
+                style.id = 'notification-styles';
+                style.textContent = `
+                    @keyframes slideInUp {
+                        from { transform: translate(-50%, 100%); opacity: 0; }
+                        to { transform: translate(-50%, 0); opacity: 1; }
+                    }
+                    @keyframes slideOutDown {
+                        from { transform: translate(-50%, 0); opacity: 1; }
+                        to { transform: translate(-50%, 100%); opacity: 0; }
+                    }
+                    @keyframes fadeOut {
+                        to { opacity: 0; }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        }
+        
+        function initAnimations() {
+            // Animación para elementos con clase fade-in al hacer scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observar elementos con clase fade-in
+            document.querySelectorAll('.fade-in').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        }
+        
+        // Inicializar animaciones cuando se carga la página
+        window.addEventListener('load', initAnimations);
+    </script>
+</body>
+</html>
